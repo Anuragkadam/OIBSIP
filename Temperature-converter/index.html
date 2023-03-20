@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-Converter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,.2), rgb(49, 49, 240));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .main-container{
+            background: transparent;
+            border-radius: 10px;
+            width: 60%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px 2px black;
+            flex-direction: column;
+        }
+        .main-container h1{
+            position: relative;
+            top: -23%;
+            font-size: 50px;
+            padding: 0 10px;
+            margin: 0 10px;
+            text-align: center;
+            color: whitesmoke;
+        }
+        .main-container .input-box{
+            position: relative;
+            top:-15%;
+        }
+        .main-container .input-box .input{
+            padding: 10px 10px;
+            outline: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 400;
+            color: black;
+            border: none;
+        }
+        .main-container .input-box .input option{
+            color: rgba(0,0,0,.9);
+        }
+        .btn{
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid whitesmoke;
+            font-size: 15px;
+            font-weight:600;
+            background-color: transparent;
+            color: whitesmoke;
+            position: relative;
+            top: -10%;
+            transition: .5s ease;
+        }
+        .btn:hover{
+            transform: scale(1.1);
+            box-shadow: 0 2px 10px black;
+        }
+        h3{
+            color: whitesmoke;
+        }
+        h3 span{
+            font-style: italic;
+        }
+
+        /* ----------Media Query----------- */
+        @media screen and (max-width: 700px) {
+            .main-container h1{
+                position: relative;
+                top: -20%;
+                font-size: 40px;
+            }
+            .input-box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 80px;
+            }
+        }       
+        @media screen and (max-width: 450px) {
+            .main-container h1{
+                position: relative;
+                top: -12%;
+                font-size: 30px;
+            }
+            .input-box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 150px;
+            }
+            .input-box select{
+                margin-top: 10px;
+            }
+            .btn{
+                position: relative;
+                top: -15%;
+            }
+            h3{
+                position: relative;
+                top: -8%;
+                left: -30%;
+            }
+        }       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <h1>Temperature Converter</h1>
+        <div class="input-box">
+            <input type="number" class="input" id="input"  required placeholder="Enter Temperature">
+        <select name="name" id="temp" class="input" >
+            <option value="CTK" >Celcius-To-Kelvin</option>
+            <option value="KTC" >Kelvin-To-Celcius</option>
+            <option value="FTC" >fahrenheit-To-Celcius</option>
+            <option value="CTF" >Celcius-To-Fahreheit</option>
+            <option value="FTK" >Fahreheit-To-Kelvin</option>
+            <option value="KTF" >Kelvin-To-Fahreheit</option>
+        </select>
+        </div>
+        <button class="btn" onclick="convert()">Convert</button>
+        <h3>Result: <span id="showResult"></span></h3>
+        </div>
+    </div>
+
+
+    <!-- -------------javascript----------- -->
+
+    <script>
+        
+        
+
+        function convert(getValue){
+            let temp = document.getElementById('temp').value;
+            let input = document.getElementById('input').value;
+            input = parseFloat(input);
+            
+            switch(temp){
+                case 'CTK':
+                document.getElementById('showResult').innerHTML = input + 273.15;
+                break;
+                case 'KTC':
+                document.getElementById('showResult').innerHTML = input - 273.15;
+                break;
+                case 'FTC':
+                document.getElementById('showResult').innerHTML = ((input -32)*(5/9));
+                break;
+                case 'CTF':
+                document.getElementById('showResult').innerHTML = (input*(9/5) + 32);
+                break;
+                case 'FTK':
+                document.getElementById('showResult').innerHTML = ((input - 32)*(5/9) + 273.15);
+                break;
+                case 'KTF':
+                let ktf = ((input - 273.15)*(9/5)) + 32;
+                document.getElementById('showResult').innerHTML = ktf.toFixed(2);
+                break;
+            }
+            
+        }
+    </script>
+</body>
+</html>
