@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">PORTFOLIO</a>
+        <div class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <i class="fa fa-toggle-off" id="darkmode" onclick="toggle(this)"></i>
+        <i class="fa fa-bars" id="nav-toggle" onclick="navtoggle(this)"></i>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            
+            <h3>Hello,<br>I Am <span>A</span>nurag <span>K</span>adam</h3>
+                <div class="function-text">
+                    <span class="first-text">A</span>
+                    <span class="second-text" id="second-text">Web Developer</span>
+                </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/anuragkadam_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Anuragkadam" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anuragkadam7/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCU-jlnHx7FDGKknCgEgAiqA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="/Anurag kadam.pdf" class="btn" download="Anurag-kadam-resume">Download CV</a>
+        </div>
+        <div class="container">
+            <img src="blob.svg" alt="" class="shape">
+            <img src="background1.png" alt="" class="boy">
+        </div>
+        </div>
+        
+    </section>
+
+    <!-- --------------About------------- -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/About me1.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>This is all about me</h3>
+            <p>I am a final year student who is pursing B-Tech from Malwa Institute of Science and Technology and my specializaion is Information Technology with overall CGPA of 7.51. I have Strong understanding of C++, HTML, CSS, JS, BOOTSTRAP and i am also familiar with core java, And Currrently i am learning Node.js</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <!-- --------------Services------------- -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="servics-box">
+                <i class="fa fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I have a strong understanding of Html, Css, Javascript, Bootsrap and i am also familiar with React.js. Currrently i am learning Back-end and also i have created many projects by the use of all these technologies.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="servics-box">
+                <i class="fa fa-music"></i>
+                <h3>Music Production</h3>
+                <p>I am a Music Producer and a Singer as well, I have my youtube channel which has 7k+ subscriber. I love to make my own music and show my skills, also i won many trophys and medals.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="servics-box">
+                <i class="fa fa-camera"></i>
+                <h3>Videography</h3>
+                <p>I have knowledge of this skill that a used to ganerate side income, i have been doing this work from last 3-4 year as a videographer and photographer in Weddings, Album Songs, and Event Video.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- --------------Portfolio------------- -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>landing Page</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, qui.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Portfolio</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, qui.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Temperature Converter</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, qui.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>TO-Do List</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, qui.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Online Shopping System</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, qui.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Student Management System</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, qui.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------Contact------------- -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#" class="contact-color">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+                <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </section>
+    <!-- --------------Footer------------- -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Anurag Kadam | All the Rights Reserved</p>
+        </div>
+        <div class="footer-icon">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
