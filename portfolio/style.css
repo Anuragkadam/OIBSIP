@@ -695,12 +695,9 @@ span{
     .home-content{
         width: 100%;
     }
-    .home-content h3 span{
-        font-size: 4vw;
-    }
     .container{
         display: absolute;
-        margin-top: 14rem;
+        margin-top: 15rem;
         width: 100%;
     }
     .container .shape{
@@ -730,10 +727,10 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
      .portfolio-layer h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .portfolio-layer p{
-        font-size: 1rem;
+        font-size: .7rem;
     }
     .function-text .first-text{
         font-size: 8vw;
