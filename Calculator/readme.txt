@@ -1,2 +1,2 @@
 To check this web site please click on the below button...
-https://github.com/Anuragkadam/OIBSIP/Calculator/
+https://anuragkadam.github.io/OIBSIP/Calculator/
