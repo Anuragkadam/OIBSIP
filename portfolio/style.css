@@ -333,7 +333,7 @@ span{
     flex-direction: column;
     padding: 0 4rem;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.3s ease;
 }
 .portfolio-box:hover .portfolio-layer{
     opacity: 1;
@@ -727,7 +727,7 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
      .portfolio-layer h3{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     .portfolio-layer p{
         font-size: .7rem;
